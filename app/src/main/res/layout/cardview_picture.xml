@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_view_height"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pictureCard"
+        cardview:cardCornerRadius="@dimen/card_view_corner_radius">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+    >
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_view_height"
+                android:background="@drawable/landscape"
+                android:scaleType="centerCrop"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingEnd="@dimen/activity_vertical_margin"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/usernameCard"
+                    android:text="Vincent Restrepo"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_username_card"
+            />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            >
+                <TextView
+                        android:id="@+id/timeStamp"
+                        android:textSize="@dimen/card_view_timestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20 days ago"
+                        android:textColor="@android:color/white"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/like_margintop_card"
+                >
+
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/likeCheckCard"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
