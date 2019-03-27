@@ -13,21 +13,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:fillViewport="true"
-            android:layout_marginTop="52dp" app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/platzigram_logo" android:id="@+id/imageViewLogo"/>
+            android:layout_marginTop="40dp" app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/platzigram_logo" android:id="@+id/imageViewLogo"
+    />
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_marginTop="42dp"
+            android:layout_height="0dp" android:layout_marginTop="20dp"
             app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
             app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:layout_marginTop="50dp"
+                android:layout_height="0dp" android:layout_marginTop="50dp"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" android:layout_marginBottom="24dp"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="50dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="50dp"
                 android:layout_marginEnd="50dp">
 
             <android.support.design.widget.TextInputLayout
@@ -41,7 +42,7 @@
                         android:id="@+id/textInputUsername"
                         android:hint="@string/username"
                         android:singleLine="true"
-                        android:textSize="20sp"/>
+                        android:textSize="@dimen/edit_text_size_login"/>
 
             </android.support.design.widget.TextInputLayout>
 
@@ -81,7 +82,7 @@
 
                 <TextView
                         android:id="@+id/noAccount"
-                        android:text="@string/noAccount"
+                        android:text="@string/no_account"
                         android:textColor="@color/editTextColorWhite"
                         android:textStyle="bold"
                         android:textSize="16sp"
@@ -93,7 +94,7 @@
 
                 <TextView
                         android:id="@+id/createHere"
-                        android:text="@string/createHere"
+                        android:text="@string/create_here"
                         android:textColor="@color/editTextColorWhite"
                         android:textStyle="bold"
                         android:textSize="16sp"
